@@ -6,6 +6,7 @@ env/
 __pycache__/
 *.so
 .Python
+.ruff_cache/
 
 # Data
 data/raw/*
