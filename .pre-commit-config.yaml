@@ -1,0 +1,52 @@
+# ===========================================
+# PRE-COMMIT HOOKS CONFIGURATION
+# ===========================================
+# Docs: https://pre-commit.com/
+
+repos:
+  # ==========================================
+  # HOOKS GÉNÉRAUX
+  # ==========================================
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: [--unsafe]
+      - id: check-json
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: check-case-conflict
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+      - id: check-toml
+
+  # ==========================================
+  # RUFF : LINTER + FORMATTER
+  # ==========================================
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.15
+    hooks:
+      # Linting avec auto-fix
+      - id: ruff
+        args: [--fix]
+        types_or: [python, pyi, jupyter]
+
+      # Formatting
+      - id: ruff-format
+        types_or: [python, pyi, jupyter]
+
+  # ==========================================
+  # JUPYTER NOTEBOOKS
+  # ==========================================
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.6.1
+    hooks:
+      - id: nbstripout
+
+# Configuration globale
+fail_fast: false
