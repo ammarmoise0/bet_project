@@ -1,0 +1,62 @@
+# Environment
+.env
+venv/
+env/
+*.pyc
+__pycache__/
+*.so
+.Python
+
+# Data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.csv
+*.parquet
+*.json
+!*example*.json
+
+# Models
+models/artifacts/*
+!models/artifacts/.gitkeep
+*.pkl
+*.joblib
+*.h5
+*.pt
+
+# Notebooks
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Docker
+*.tar
+
+# AWS
+.aws/
+
+# PDFs (already in repo)
+!*.pdf
+
