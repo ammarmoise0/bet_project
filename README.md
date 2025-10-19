@@ -94,4 +94,3 @@ Copier `.env.example` vers `.env` et remplir :
 - [football-data.org](https://www.football-data.org/) - Données matches
 - [The Odds API](https://the-odds-api.com/) - Historical odds
 - [Dixon-Coles Model](https://www.researchgate.net/publication/222447402_Modelling_Association_Football_Scores_and_Inefficiencies_in_the_Football_Betting_Market)
-
