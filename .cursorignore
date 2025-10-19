@@ -1,0 +1,51 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Data (gros fichiers)
+data/raw/*
+data/processed/*
+*.csv
+*.parquet
+*.json
+!*example*.json
+
+# Models (gros fichiers)
+models/artifacts/*
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Git
+.git/
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
