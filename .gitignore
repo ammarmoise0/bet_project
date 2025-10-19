@@ -7,6 +7,7 @@ __pycache__/
 *.so
 .Python
 .ruff_cache/
+.cursorignore
 
 # Data
 data/raw/*
